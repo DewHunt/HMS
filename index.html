@@ -1,0 +1,614 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>BCSIR - House Management Syastem</title>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+		<style type="text/css">
+			.card {
+				-webkit-border-radius: 3px;
+				-moz-border-radius: 3px;
+				border-radius: 3px;
+				background: #fff;
+				margin-top: 50px;
+				margin-bottom: 200px;
+			}
+
+			.card-5 {
+				background: #fff;
+				-webkit-border-radius: 10px;
+				-moz-border-radius: 10px;
+				border-radius: 10px;
+				-webkit-box-shadow: 0px 8px 20px 0px rgba(0, 0, 0, 0.15);
+				-moz-box-shadow: 0px 8px 20px 0px rgba(0, 0, 0, 0.15);
+				box-shadow: 0px 8px 20px 0px rgba(0, 0, 0, 0.15);
+			}
+
+			.card-5 .card-heading {
+				padding: 0px 0;
+				/*background: #1a1a1a;*/
+				background: #7aaaba;
+				-webkit-border-top-left-radius: 10px;
+				-moz-border-radius-topleft: 10px;
+				border-top-left-radius: 10px;
+				-webkit-border-top-right-radius: 10px;
+				-moz-border-radius-topright: 10px;
+				border-top-right-radius: 10px;
+				/*background-image: url("iamges/Logo-en.png");*/
+			}
+
+			.card-5 .card-body {
+				padding: 52px 85px;
+				padding-bottom: 73px;
+			}
+
+			@media (max-width: 767px) {
+				.card-5 .card-body {
+					padding: 40px 30px;
+					padding-bottom: 50px;
+				}
+			}
+
+			caption {
+				caption-side: top;
+			}
+
+			.title {
+				font-size: 50px;
+				text-transform: uppercase;
+				font-weight: 700;
+				text-align: center;
+				color: #800000;
+			}
+
+			.center {
+				display: block;
+				margin-left: auto;
+				margin-right: auto;
+			}
+
+			.header-three{
+				color: green;
+			}
+.dropdown .dropdown-menu {
+	-webkit-border-radius: 6px;
+	-moz-border-radius: 6px;
+	border-radius: 6px;
+}
+		</style>
+	</head>
+
+	<body>
+		<div class="container">
+            <div class="card card-5">
+                <div class="card-heading">
+                	<!-- <img src="images/Logo-en.png" class="center"> -->
+                	<img src="images/Logo-en-22.png" class="center">
+<!--                     <h1 class="title">BCSIR Laboratories, Dhaka</h1>
+                    <h5 style="color: #0a617e; text-align: center;">Bangladesh Council of Scientific and Industrial Reasearch</h5> -->
+                    <p style="color: white; text-align: center;">Dr. Qudrat-i-Khuda Road, Dhanmondi, Dhaka-1205, Bangladesh.</p>
+                    <h4 style="color: black; text-align: center;">Application Form</h4>
+                </div>
+
+                <div class="card-body">
+                    <form method="POST">          
+	                    <table class="table table-borderless table-sm">
+	                    	<caption>
+	                    		<h3 >Personal Information</h3>
+	                    		<hr>                    		
+	                    	</caption>
+
+	                    	<tbody>
+	                    		<tr>
+	                    			<td>Employee Full Name<br>(Capital Letter)</td>
+	                    			<td>
+	                    				<input type="text" class="form-control" id="name" name="name" placeholder="Enter Name">
+	                    			</td>
+	                    		</tr>
+
+	                    		<tr>
+	                    			<td>Date Of Birth</td>
+	                    			<td>mary@example.com</td>
+	                    		</tr>
+
+	                    		<tr>
+	                    			<td>Marital Status</td>
+	                    			<td>
+	                    				<div class="form-check-inline">
+	                    					<label class="form-check-label">
+	                    						<input type="radio" class="form-check-input" name="marital-status" value="Single">Single
+	                    					</label>
+	                    				</div>
+	                    				<div class="form-check-inline">
+	                    					<label class="form-check-label">
+	                    						<input type="radio" class="form-check-input" name="marital-status" value="Married">Married
+	                    					</label>
+	                    				</div>
+	                    			</td>
+	                    		</tr>
+
+	                    		<tr>
+	                    			<td>Phone Number</td>
+	                    			<td>
+	                    				<input type="text" class="form-control" id="phone" name="phone" placeholder="Enter Phone Number">
+	                    			</td>
+	                    		</tr>
+	                    	</tbody>
+	                    </table>
+
+	                    <table class="table table-borderless table-sm">
+	                    	<caption>
+	                    		<h3 >Spouse/Guardian Information</h3>
+	                    		<hr>
+	                    	</caption>
+
+	                    	<tbody>
+	                    		<tr>
+	                    			<td>Name</td>
+	                    			<td>
+	                    				<input type="text" class="form-control" id="spouse-guardian-name" name="spouse-guardian-name" placeholder="Enter Spouse/Guardian Name">
+	                    			</td>
+	                    		</tr>
+
+	                    		<tr>
+	                    			<td>Relation</td>
+	                    			<td>
+	                    				<input type="text" class="form-control" id="relation" name="relation" placeholder="Enter Relation">
+	                    			</td>
+	                    		</tr>
+
+	                    		<tr>
+	                    			<td>Occupation</td>
+	                    			<td>
+	                    				<div class="form-check-inline">
+	                    					<label class="form-check-label">
+	                    						<input type="radio" class="form-check-input" name="occupation" value="Employee">Employee
+	                    					</label>
+	                    				</div>
+	                    				<div class="form-check-inline">
+	                    					<label class="form-check-label">
+	                    						<input type="radio" class="form-check-input" name="occupation" value="N/A">N/A
+	                    					</label>
+	                    				</div>
+	                    			</td>
+	                    		</tr>
+
+	                    		<tr id="instittue-name-tr">
+	                    			<td>Institute Name</td>
+	                    			<td>
+	                    				<input type="text" class="form-control" id="instittue-name" name="instittue-name" placeholder="Enter Institute Name">
+	                    			</td>
+	                    		</tr>
+
+	                    		<tr id="present-post-tr">
+	                    			<td>Present Post</td>
+	                    			<td>
+	                    				<input type="text" class="form-control" id="present-post" name="present-post" placeholder="Enter Present Post">
+	                    			</td>
+	                    		</tr>
+
+	                    		<tr id="working-place-tr">
+	                    			<td>Working Place</td>
+	                    			<td>
+	                    				<input type="text" class="form-control" id="working-place" name="working-place" placeholder="Enter Working Place">
+	                    			</td>
+	                    		</tr>
+	                    	</tbody>
+	                    </table>
+
+	                    <table class="table table-borderless table-sm">
+	                    	<caption>
+	                    		<h3 >Job Information</h3>
+	                    		<hr>
+	                    	</caption>
+
+	                    	<tbody>
+	                    		<tr>
+	                    			<td>Present Work Place</td>
+	                    			<td>
+	                    				<input type="text" class="form-control" id="present-working-place" name="present-working-place" placeholder="Enter Present Working Place">
+	                    			</td>
+	                    		</tr>
+
+	                    		<tr>
+	                    			<td>Present Post</td>
+	                    			<td>
+	                    				<input type="text" class="form-control" id="post" name="post" placeholder="Enter Present Post">
+	                    			</td>
+	                    		</tr>
+
+	                    		<tr>
+	                    			<td>Joining Date Present Post</td>
+	                    			<td>DAte
+	                    			</td>
+	                    		</tr>
+
+	                    		<tr>
+	                    			<td>Unit Name</td>
+	                    			<td>
+	                    				<input type="text" class="form-control" id="unit-name" name="unit-name" placeholder="Enter Unit Name">
+	                    			</td>
+	                    		</tr>
+
+	                    		<tr>
+	                    			<td>Joining Post</td>
+	                    			<td>
+	                    				<input type="text" class="form-control" id="unit-name" name="unit-name" placeholder="Enter Post of Joining Job for Council Revenue">
+	                    			</td>
+	                    		</tr>
+
+	                    		<tr>
+	                    			<td>Joining Date of Joining Post</td>
+	                    			<td>Joining Date Job for Council Revenue
+	                    			</td>
+	                    		</tr>
+	                    	</tbody>
+	                    </table>
+
+	                    <table class="table table-borderless table-sm">
+	                    	<caption>
+	                    		<h3>House Information</h3>
+	                    		<hr>
+	                    	</caption>
+
+	                    	<thead class="thead-light">
+	                    		<tr>
+	                    			<th></th>
+	                    			<th>Choice No. 1</th>
+	                    			<th>Choice No. 2</th>
+	                    			<th>Choice No. 3</th>
+	                    		</tr>
+	                    	</thead>
+
+	                    	<tbody>
+	                    		<tr>
+	                    			<td>Location</td>
+	                    			<td>
+	                    				<div class="form-group">
+	                    					<select class="form-control" id="exampleFormControlSelect1">
+	                    						<option>Select Location</option>
+	                    						<option>Mirpur</option>
+	                    						<option>Dhanmondi</option>
+	                    					</select>
+	                    				</div>
+	                    			</td>
+
+	                    			<td>
+	                    				<div class="form-group">
+	                    					<select class="form-control" id="exampleFormControlSelect1">
+	                    						<option>Select Location</option>
+	                    						<option>Mirpur</option>
+	                    						<option>Dhanmondi</option>
+	                    					</select>
+	                    				</div>
+	                    			</td>
+
+	                    			<td>
+	                    				<div class="form-group">
+	                    					<select class="form-control" id="exampleFormControlSelect1">
+	                    						<option>Select Location</option>
+	                    						<option>Mirpur</option>
+	                    						<option>Dhanmondi</option>
+	                    					</select>
+	                    				</div>
+	                    			</td>
+	                    		</tr>
+
+	                    		<tr>
+	                    			<td>Building Name/Number</td>
+	                    			<td>
+	                    				<div class="form-group">
+	                    					<select class="form-control" id="exampleFormControlSelect1">
+	                    						<option>Select Building</option>
+	                    						<option>Building A1</option>
+	                    						<option>Building A2</option>
+	                    						<option>Building B1</option>
+	                    						<option>Building B2</option>
+	                    					</select>
+	                    				</div>
+	                    			</td>
+
+	                    			<td>
+	                    				<div class="form-group">
+	                    					<select class="form-control" id="exampleFormControlSelect1">
+	                    						<option>Select Building</option>
+	                    						<option>Building A1</option>
+	                    						<option>Building A2</option>
+	                    						<option>Building B1</option>
+	                    						<option>Building B2</option>
+	                    					</select>
+	                    				</div>
+	                    			</td>
+
+	                    			<td>
+	                    				<div class="form-group">
+	                    					<select class="form-control" id="exampleFormControlSelect1">
+	                    						<option>Select Building</option>
+	                    						<option>Building A1</option>
+	                    						<option>Building A2</option>
+	                    						<option>Building B1</option>
+	                    						<option>Building B2</option>
+	                    					</select>
+	                    				</div>
+	                    			</td>
+	                    		</tr>
+
+	                    		<tr>
+	                    			<td>Flat Type</td>
+	                    			<td>
+	                    				<div class="form-group">
+	                    					<select class="form-control" id="exampleFormControlSelect1">
+	                    						<option>Select Building</option>
+	                    						<option>Flat A101</option>
+	                    						<option>Flat A102</option>
+	                    						<option>Flat B101</option>
+	                    						<option>Flat B102</option>
+	                    					</select>
+	                    				</div>
+	                    			</td>
+
+	                    			<td>
+	                    				<div class="form-group">
+	                    					<select class="form-control" id="exampleFormControlSelect1">
+	                    						<option>Select Building</option>
+	                    						<option>Flat A101</option>
+	                    						<option>Flat A102</option>
+	                    						<option>Flat B101</option>
+	                    						<option>Flat B102</option>
+	                    					</select>
+	                    				</div>
+	                    			</td>
+
+	                    			<td>
+	                    				<div class="form-group">
+	                    					<select class="form-control" id="exampleFormControlSelect1">
+	                    						<option>Select Building</option>
+	                    						<option>Flat A1</option>
+	                    						<option>Flat A2</option>
+	                    						<option>Flat B1</option>
+	                    						<option>Flat B2</option>
+	                    					</select>
+	                    				</div>
+	                    			</td>
+	                    		</tr>
+
+	                    		<tr>
+	                    			<td>Do You Have Any House or Flat?</td>
+	                    			<td colspan="3">
+	                    				<div class="form-check-inline">
+	                    					<label class="form-check-label">
+	                    						<input type="radio" class="form-check-input" name="own-house-info" value="Yes">Yes
+	                    					</label>
+	                    				</div>
+	                    				<div class="form-check-inline">
+	                    					<label class="form-check-label">
+	                    						<input type="radio" class="form-check-input" name="own-house-info" value="No">No
+	                    					</label>
+	                    				</div>
+	                    			</td>
+	                    		</tr>
+
+	                    		<tr id="number-of-house-tr">
+	                    			<td>Number of House/Flat</td>
+	                    			<td colspan="3">
+	                    				<input type="text" class="form-control" id="number-of-flat" name="number-of-flat" placeholder="Enter Number of House/Flat">
+	                    			</td>
+	                    		</tr>
+
+	                    		<tr id="date-flat-purchase-tr">
+	                    			<td>Date of Construction Completed/Purchase</td>
+	                    			<td colspan="3">
+	                    				<input type="text" class="form-control" id="purchase-date" name="purchase-date" placeholder="Enter Date of Construction Completed/Purchaed">
+	                    			</td>
+	                    		</tr>
+	                    	</tbody>
+	                    </table>
+
+	                    <table class="table table-borderless table-sm">
+	                    	<caption>
+	                    		<h3>Family Members Description (With Applicant)</h3>
+	                    		<hr>
+	                    	</caption>
+
+	                    	<thead class="thead-light">
+	                    		<tr>
+	                    			<th>S.L.</th>
+	                    			<th>Name</th>
+	                    			<th>Age</th>
+	                    			<th>Relation</th>
+	                    		</tr>
+	                    	</thead>
+
+	                    	<tfoot>
+	                    		<tr>
+	                    			<td colspan="4">
+	                    				<button onclick="return addRow();" class="btn btn-outline-primary btn-sm">Add More</button>
+	                    				<button onclick="return remove();" class="btn btn-outline-danger btn-sm">Remove</button>
+	                    				<input type="hidden" name="sl" id="sl" value="1"> 
+	                    			</td>
+	                    		</tr>
+	                    	</tfoot>
+
+	                    	<tbody>
+	                    		<tr>
+	                    			<td>1</td>
+	                    			<td>
+	                    				<input type="text" class="form-control" id="member-name-1" name="member-name-1" placeholder="Enter Family Member Name">
+	                    			</td>
+	                    			<td>
+	                    				<input type="text" class="form-control" id="member-age-1" name="member-age-1" placeholder="Enter Family Member Age">
+	                    			</td>
+	                    			<td>
+	                    				<input type="text" class="form-control" id="member-relation-1" name="member-relation-1" placeholder="Enter Family Member Relation">
+	                    			</td>
+	                    		</tr>
+	                    	</tbody>
+	                    </table>
+
+	                    <table class="table table-borderless table-sm">
+	                    	<caption>
+	                    		<h3>Previous Workplace House/Flat Information</h3>
+	                    	</caption>
+
+	                    	<tbody>
+
+	                    		<tr>
+	                    			<td>Did you have any houses/flats?</td>
+	                    			<td colspan="3">
+	                    				<div class="form-check-inline">
+	                    					<label class="form-check-label">
+	                    						<input type="radio" class="form-check-input" name="previous-house-info" value="Yes">Yes
+	                    					</label>
+	                    				</div>
+	                    				<div class="form-check-inline">
+	                    					<label class="form-check-label">
+	                    						<input type="radio" class="form-check-input" name="previous-house-info" value="No">No
+	                    					</label>
+	                    				</div>
+	                    			</td>
+	                    		</tr>
+
+	                    		<tr id="previous-house-details-tr">
+	                    			<td>Right Details About House/Flat</td>
+	                    			<td colspan="3">
+	                    				<div class="form-group">
+	                    					<textarea class="form-control" id="flat-details" rows="3"></textarea>
+	                    				</div>
+	                    			</td>
+	                    		</tr>
+
+	                    		<tr id="date-house-leave-tr">
+	                    			<td>Date of House/Flat Leave</td>
+	                    			<td colspan="3">
+	                    				<input type="text" class="form-control" id="leave-date" name="leave-date" placeholder="Enter Date of House/Flat Leave">
+	                    			</td>
+	                    		</tr>
+	                    	</tbody>
+	                    </table>
+                    </form>
+                </div>
+
+                <div class="card-footer" style="text-align: center;">
+                	<div class="form-check">
+                		<input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                		<label class="form-check-label" for="defaultCheck1">
+                			I Agree All The Terms and Condition
+                			<a href="#">Terms and Condition</a>
+                		</label>
+                	</div>
+
+                	<div class="col-auto my-1">
+                		<button type="submit" class="btn btn-primary">Submit</button>
+                	</div>
+                </div>
+            </div>
+		</div>
+
+		<script type="text/javascript">
+			function addRow(){
+				var sl = document.getElementById('sl').value;
+				sl++;
+
+				document.getElementById("sl").value = sl;
+
+				var table = document.getElementsByTagName('table')[4];
+
+				var newRow = table.insertRow(sl);
+
+				var cell1 = newRow.insertCell(0);
+				var cell2 = newRow.insertCell(1);
+				var cell3 = newRow.insertCell(2);
+				var cell4 = newRow.insertCell(3);
+
+				cell1.innerHTML = sl;
+				cell2.innerHTML = '<input type="text" class="form-control" id="member-name-'+sl+'" name="member-name-'+sl+'" placeholder="Enter Family Member Name">';
+				cell3.innerHTML = '<input type="text" class="form-control" id="member-age-'+sl+'" name="member-age-'+sl+'" placeholder="Enter Family Member Age">';
+				cell4.innerHTML = '<input type="text" class="form-control" id="member-relation-'+sl+'" name="member-relation-'+sl+'" placeholder="Enter Family Member Relation">';
+
+				return false;
+			}
+
+			function remove(sl){
+				var index, table, sl;
+				sl = document.getElementById('sl').value;
+
+				if (sl == 1)
+				{
+					window.alert("You Can't Delete Last Row Of The Table");
+				}
+				else
+				{
+					table = document.getElementsByTagName('table')[4];
+					table.deleteRow(sl);
+					sl--;
+					document.getElementById("sl").value = sl;
+				}
+
+				return false;
+			}
+
+			$(document).ready(function(){
+				$('#instittue-name-tr').hide();
+				$('#present-post-tr').hide();
+				$('#working-place-tr').hide();
+
+				$('#number-of-house-tr').hide();
+				$('#date-flat-purchase-tr').hide();
+
+				$('#previous-house-details-tr').hide();
+				$('#date-house-leave-tr').hide();
+
+				$('input:radio[name=occupation]').click(function(){
+					var occupation = $(this).val();
+					if (occupation == "Employee")
+					{
+						$('#instittue-name-tr').show();
+						$('#present-post-tr').show();
+						$('#working-place-tr').show();
+					}
+					else
+					{
+						$('#instittue-name-tr').hide();
+						$('#present-post-tr').hide();
+						$('#working-place-tr').hide();
+					}
+				});
+
+				$('input:radio[name=own-house-info]').click(function(){
+					var houseInfo = $(this).val();
+					if (houseInfo == "Yes")
+					{
+						$('#number-of-house-tr').show();
+						$('#date-flat-purchase-tr').show();
+					}
+					else
+					{
+						$('#number-of-house-tr').hide();
+						$('#date-flat-purchase-tr').hide();
+					}
+				});
+
+				$('input:radio[name=previous-house-info]').click(function(){
+					var previousHouseInfo = $(this).val();
+					if (previousHouseInfo == "Yes")
+					{
+						$('#previous-house-details-tr').show();
+						$('#date-house-leave-tr').show();
+					}
+					else
+					{
+						$('#previous-house-details-tr').hide();
+						$('#date-house-leave-tr').hide();
+					}
+				});
+
+			});
+		</script>
+
+	</body>
+</html>
